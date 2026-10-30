@@ -17,7 +17,7 @@ import { motion } from 'motion/react';
 import heroImage from '../picture-1.jpg';
 
 export default function App() {
-  const EXTERNAL_URL = "https://travelai.top/";
+  const EXTERNAL_URL = import.meta.env.VITE_SERVICE_URL?.trim() || "https://travelai.top/";
 
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900 selection:bg-blue-100 selection:text-blue-900">
